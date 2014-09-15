@@ -1,0 +1,136 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content=" " />
+    <meta name="copyright" content="" />
+    <meta http-equiv="content-language" content="zh-cn" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/themes.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/global.js"></script>
+
+
+    <title>易通贷理财平台</title>
+
+    <script type="text/javascript" src="http://m.ppmoney.com/js/member_register.js" language="JavaScript"></script>
+
+
+</head>
+<body>
+<div class="page_title">
+    <div class="left"><a href="member_info.html" class="back"></a></div>
+    <div class="center">实名认证</div>
+</div>
+<div class="page_main real_name_certify" style="padding-top: 75px;">
+    <form action="/json/member/realNameCertify.json" method="post" onsubmit="return false">
+        <input type="hidden" name="redirecturl" value="/">
+        <input type="hidden" name="mobile" value="13604251568">
+        <input type="hidden" name="realName">
+        <table>
+            <tbody><tr>
+                <td colspan="2"><div class="common_input_0"><input type="text" name="lastName" placeholder="请输入姓氏"></div></td>
+            </tr>
+            <tr>
+                <td colspan="2"><div class="common_input_0"><input type="text" name="firstName" placeholder="请输入名字"></div></td>
+            </tr>
+            <tr>
+                <td colspan="2"><div class="common_input_0"><input type="text" name="IDCardNumber" placeholder="请输入身份证号码"></div></td>
+            </tr>
+            <tr>
+                <td width="50%"><button type="submit" class="common_button_1">认证</button></td>
+                <td><a href="member_info.html" class="common_button_2">返回</a></td>
+            </tr>
+            </tbody></table>
+    </form>
+</div>
+<div class="page_contact" id="page_contact">
+    <!--<div>
+        <a class="common_button_0" href="http://m.ppmoney.com/recharge.htm">立即充值</a><a href="http://m.ppmoney.com/ppmoney.htm" class="common_button_0">下载安卓客户端</a>
+    </div>--><br>
+    客服热线（工作时间 8:30-22:00）<br />
+    <p>400-6919-778</p>
+    版权所有 (C) 1tongdai.com<br />大连亿通达信息科技有限公司版权所有  <br />
+    <a href="http://www.miitbeian.gov.cn/" target="_blank">辽ICP备：14004706号</a><br />
+    <!-- <a href="http://m.ppmoney.com/info.htm">[手机版]</a>&nbsp;|&nbsp;<a href="http://www.ppmoney.com">[PC版]</a>-->
+</div>
+
+<div id="downs">
+    <div id="downs_1" onclick="lccp()"><center><img id="downs_1_img" src="images/buttona.png" style="width:50px;height:40px;"/></center></div>
+    <div id="downs_2" onclick="wdlc()"><center><img id="downs_2_img" src="images/buttonb.png" style="width:50px;height:40px;"/></center></div>
+    <div id="downs_3" onclick="xzApp()"><center><img id="downs_3_img" src="images/download_app.png" style="width:50px;height:40px;"/></center></div>
+    <input type="hidden" id="memberInfoURL" value="member_info.html"/>
+    <input type="hidden" id="infoURL" value="index.html"/>
+</div>
+
+<div id="gg_options"></div>
+<div id="gg_option">
+    <a href="javascript:gg_select_num_sub('an')">安卓</a>
+    <a href="javascript:gg_select_num_sub('ip')">iPhone</a>
+</div>
+
+
+<style type="text/css">
+    #downs_1{width:33%;float: left;height:100%;}
+    #downs_2{width:32%;float: left;height:100%;}
+    #downs_3{width:33%;float: right;height:100%;}
+
+    #downs{padding-top:10px;background:#fff; height: 50px; width:100%; position:fixed; overflow:hidden; z-index:10; bottom:0px; left:0px; border-top: solid 1px #c2c2c2;}
+    #gg_options{
+        width:100%;
+        height:100%;
+        position:fixed;
+        top: 0px;
+        left: 0px;
+        background:#000;
+        z-index: 1000;
+        opacity :0.7;
+        display: none;
+    }
+    #gg_option{
+        width:80%;
+        position:fixed;
+        top: 20%;
+        left: 15%;
+        z-index: 1001;
+        background:#fff;
+        border: solid 2px #c2c2c2;
+        display: none;
+    }
+    #gg_option a{
+        display:block;
+        width:100%;
+        height:30px;
+        color:#676767;
+        line-height:30px;
+        text-align:center;
+    }
+    #gg_option a:hover{
+        background-color: #2bb1e8;
+        color:#fff;
+    }
+
+</style>
+
+<script type="text/javascript">
+
+    function wdlc(){
+        var memberInfoURL = $("#memberInfoURL").val();
+        location.href = memberInfoURL;
+    }
+    function lccp(){
+        var infoURL = $("#infoURL").val();
+        location.href = infoURL;
+    }
+    function xzApp(){
+        location.href = "#";
+    }
+</script>
+</body>
+</html>
